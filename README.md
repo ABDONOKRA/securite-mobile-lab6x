@@ -103,6 +103,64 @@
   ## Fichier de traçabilité:
 <img width="976" height="465" alt="image" src="https://github.com/user-attachments/assets/e3fb022c-72c3-4faf-a2cf-69537126767a" />
 
+  # TASK 4 - Analyse du Manifeste et des Permissions  
+
+    
 ## Analyse du Manifeste et des Permissions
+
+  <img width="792" height="309" alt="image" src="https://github.com/user-attachments/assets/5882f866-5487-4270-b99d-ce99ba8523a5" />    
+  
+  <img width="1648" height="189" alt="image" src="https://github.com/user-attachments/assets/c803f3f5-7edf-4d8a-a15e-b4d2fd740209" />
+
+  <img width="954" height="350" alt="image" src="https://github.com/user-attachments/assets/e5fefebc-2847-49ae-bca2-6b9d08010ab0" />
+  ### Les fichiers 
+
+  <img width="989" height="141" alt="image" src="https://github.com/user-attachments/assets/395456a4-9aa4-4e13-8e8c-8494d95de838" />    
+  
+  ## 🔐 ANALYSE DES PERMISSIONS
+
+### Permissions DANGEREUSES 🔴
+
+| Permission | Description | Risque |
+|------------|-------------|--------|
+| `android.permission.CAMERA` | Permet de prendre photos et vidéos | Collecte d'images en temps réel |
+| `android.permission.READ_EXTERNAL_STORAGE` | Lecture du stockage externe | Accès aux fichiers personnels |
+| `android.permission.WRITE_EXTERNAL_STORAGE` | Écriture sur stockage externe | Modification/suppression de fichiers |
+
+### Permissions NORMALES 🔵
+- `android.permission.INTERNET` - Accès réseau
+- `android.permission.USE_BIOMETRIC` - Biométrie
+- `android.permission.USE_FINGERPRINT` - Empreinte (déprécié)
+
+### Permission INCONNUE ⚠️
+- `owasp.sat.agoat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`
+
+## 🚨 ANALYSE DE SÉCURITÉ COMPLÈTE
+
+### Vulnérabilités Critiques 🔴 HIGH
+
+| # | Problème | Description |
+|---|----------|-------------|
+| 1 | **Vulnerable Android Version** | Target SDK 19 (Android 4.4.4) → Très obsolète ! Multiples vulnérabilités non patchées |
+| 3 | **Debug Enabled** | Mode debug activé |
+
+### Problèmes de Configuration 🟠 WARNING
+
+| # | Problème | Détail |
+|---|----------|--------|
+| 4 | **AllowBackup** | Sauvegarde de données autorisée |
+| 5 | **Activity Exported** | `AccessControlJViewActivity` non protégée |
+| 6 | **Broadcast Receiver Exported** | `ShowDataReceiver` accessible par toutes les apps |
+| 7 | **Service Exported** | `DownloadInvoiceService` accessible par toutes les apps |
+| 8 | **Content Provider Exported** | `ContentProviderActivity` accessible par toutes les apps |
+| 9 | **Broadcast Receiver with Weak Permission** | `ProfileInstallReceiver` protégé par permission DUMP (faible) |
+
+### Informations Complémentaires ℹ️ INFO
+
+| # | Problème | Action |
+|---|----------|--------|
+| 2 | **Network Security Configuration** | Présence d'une configuration réseau personnalisée - À examiner en détail |
+
+
 
 
