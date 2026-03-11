@@ -166,6 +166,11 @@
   <img width="814" height="654" alt="image" src="https://github.com/user-attachments/assets/f670b70f-2cc0-4616-873a-0b87be363813" />
 
 
+# Analyse de la Configuration Réseau
 
+<img width="1633" height="72" alt="image" src="https://github.com/user-attachments/assets/8f34972f-2b34-42b5-8e64-51d23a1b967c" />
+
+
+  <img width="792" height="408" alt="image" src="https://github.com/user-attachments/assets/4cc305bf-8138-4e91-9a4c-139f800a9ed1" />
 
 
