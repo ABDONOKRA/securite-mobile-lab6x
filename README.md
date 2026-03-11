@@ -161,6 +161,11 @@
 |---|----------|--------|
 | 2 | **Network Security Configuration** | Présence d'une configuration réseau personnalisée - À examiner en détail |
 
+   <img width="832" height="440" alt="image" src="https://github.com/user-attachments/assets/b88a209b-4521-4df7-a734-5439a4740272" />  
+  <img width="704" height="557" alt="image" src="https://github.com/user-attachments/assets/55240240-9300-4bd4-b2ff-3abb6fc85d8b" />  
+  <img width="814" height="654" alt="image" src="https://github.com/user-attachments/assets/f670b70f-2cc0-4616-873a-0b87be363813" />
+
+
 
 
 
