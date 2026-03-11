@@ -22,7 +22,13 @@
 
 <img width="702" height="202" alt="image" src="https://github.com/user-attachments/assets/dd619168-7d6e-4f64-9646-f90d10e578fc" />
 
+  ###  Noter la version de MobSF  
+  
+<img width="702" height="221" alt="image" src="https://github.com/user-attachments/assets/4085c1d5-e701-4e37-9e72-bfe536a525f9" />  
 
+###  l'heure de début d'analyse  
+
+<img width="702" height="221" alt="image" src="https://github.com/user-attachments/assets/9e6d394c-347e-493a-b808-6da420579683" />
 
 
 
@@ -42,9 +48,35 @@
   <img width="1056" height="422" alt="image" src="https://github.com/user-attachments/assets/12c3ccc8-eb98-4f79-8e77-27f16cdb04ad" />
 
   ### apres 
-   <img width="986" height="774" alt="image" src="https://github.com/user-attachments/assets/0a4dd414-1f38-46c3-9234-bcee1a318104" />
+   <img width="986" height="774" alt="image" src="https://github.com/user-attachments/assets/0a4dd414-1f38-46c3-9234-bcee1a318104" />    
+   
+   <img width="1920" height="860" alt="image" src="https://github.com/user-attachments/assets/6112db05-a830-4f45-800a-e04d0bb20ac2" />
 
-  lanalyse fait automatique 
+     ## 📊 Analyse de l'APK
+
+### ✅ APP SCORES
+- **Security Score:** 48/100 (orange - niveau moyen)
+- **Trackers Detection:** 0/432 (bon !)
+
+### ✅ FILE INFORMATION
+- **File Name:** AndroGoat.apk
+- **Size:** 6.77MB
+- **Package Name:** owasp.sat.agoat
+- **Main Activity:** owasp.sat.agoat.SplashActivity
+- **Min SDK:** 23 | **Target SDK:** 19
+- **Android Version:** 1.0 | **Version Code:** 1
+
+### ✅ COMPOSANTS EXPOSÉS (CRITIQUE !)
+
+| Type | Nombre | Exportés | Statut |
+|------|--------|----------|--------|
+| 🔵 Activities | 30 | 1 | |
+| 🟢 Services | 1 | 1 | |
+| 🟡 Receivers | 2 | 2 | ⚠️ |
+| 🔴 Providers | 2 | 1 | ⚠️ |
+
+
+
 
 
 
