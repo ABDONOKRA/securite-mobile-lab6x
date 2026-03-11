@@ -50,9 +50,33 @@
   ### apres 
    <img width="986" height="774" alt="image" src="https://github.com/user-attachments/assets/0a4dd414-1f38-46c3-9234-bcee1a318104" />    
    
-   <img width="1920" height="860" alt="image" src="https://github.com/user-attachments/assets/6112db05-a830-4f45-800a-e04d0bb20ac2" />
+   <img width="1920" height="860" alt="image" src="https://github.com/user-attachments/assets/6112db05-a830-4f45-800a-e04d0bb20ac2" />  
 
-     ## 📊 Analyse de l'APK
+
+   <img width="1672" height="277" alt="image" src="https://github.com/user-attachments/assets/fcbd832f-b982-48ba-af11-fd3bde0c9286" />
+
+  <img width="1693" height="553" alt="image" src="https://github.com/user-attachments/assets/05d051ed-ca9b-4d69-9ed8-6827e3d6afa1" />
+
+  <img width="1702" height="452" alt="image" src="https://github.com/user-attachments/assets/efd8a2e1-a3ca-412a-acc0-74f4e06375d6" />  
+  <img width="1717" height="560" alt="image" src="https://github.com/user-attachments/assets/b2d1273d-b236-4201-bfb6-4e38be7791f4" />
+
+  <img width="1722" height="434" alt="image" src="https://github.com/user-attachments/assets/468930f2-5353-4c86-84fd-570d1e2c9143" />
+
+  <img width="1685" height="354" alt="image" src="https://github.com/user-attachments/assets/9607e34b-9452-4519-b42c-1dcae865b723" />
+
+  <img width="1688" height="702" alt="image" src="https://github.com/user-attachments/assets/df24062e-f04f-4de3-8a2e-c498d7116431" />
+
+  <img width="1756" height="696" alt="image" src="https://github.com/user-attachments/assets/e84891fb-c999-4043-8496-2b3e6a5c28cd" />
+
+  <img width="1689" height="705" alt="image" src="https://github.com/user-attachments/assets/8405c862-3d7f-4a1b-8544-42218bae134e" />
+
+  <img width="1689" height="593" alt="image" src="https://github.com/user-attachments/assets/97a454f1-9191-4963-b218-cf1bf9521ae0" />
+
+  <img width="1690" height="356" alt="image" src="https://github.com/user-attachments/assets/35a59617-05a0-471b-a65f-06f711be8b29" />
+
+
+
+## 📊 Analyse de l'APK
 
 ### ✅ APP SCORES
 - **Security Score:** 48/100 (orange - niveau moyen)
@@ -76,7 +100,9 @@
 | 🔴 Providers | 2 | 1 | ⚠️ |
 
 
+  ## Fichier de traçabilité:
+<img width="976" height="465" alt="image" src="https://github.com/user-attachments/assets/e3fb022c-72c3-4faf-a2cf-69537126767a" />
 
-
+## Analyse du Manifeste et des Permissions
 
 
