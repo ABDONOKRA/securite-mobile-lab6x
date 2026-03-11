@@ -15,6 +15,10 @@
 
   <img width="1056" height="422" alt="image" src="https://github.com/user-attachments/assets/12c3ccc8-eb98-4f79-8e77-27f16cdb04ad" />
 
+  ### apres 
+   <img width="986" height="774" alt="image" src="https://github.com/user-attachments/assets/0a4dd414-1f38-46c3-9234-bcee1a318104" />
+
+  lanalyse fait automatique 
 
 
 
