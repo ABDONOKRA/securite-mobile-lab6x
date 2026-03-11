@@ -174,3 +174,19 @@
   <img width="792" height="408" alt="image" src="https://github.com/user-attachments/assets/4cc305bf-8138-4e91-9a4c-139f800a9ed1" />
 
 
+
+  <img width="1018" height="1050" alt="image" src="https://github.com/user-attachments/assets/ed42b3bd-5eff-4b12-b1ca-ce04560ef6a8" />  
+  ## 🔑 SECRETS HARDCODÉS (Vulnérabilité #2)
+
+Les fichiers suivants contiennent potentiellement des secrets hardcodés :
+
+### Fichiers Java Suspects 📁  
+
+owasp/sat/agoat/AIChatActivity.java  
+
+owasp/sat/agoat/CloudServicesActivity.java 
+
+owasp/sat/agoat/ContentProviderActivity.java  
+
+owasp/sat/agoat/SQLinjectionActivity.java  
+
