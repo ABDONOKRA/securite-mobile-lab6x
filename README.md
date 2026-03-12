@@ -188,5 +188,156 @@ owasp/sat/agoat/CloudServicesActivity.java
 
 owasp/sat/agoat/ContentProviderActivity.java  
 
-owasp/sat/agoat/SQLinjectionActivity.java  
+owasp/sat/agoat/SQLinjectionActivity.java      
+# SECRET HARDCODÉ TROUVÉ ! 
+<img width="924" height="66" alt="image" src="https://github.com/user-attachments/assets/30c16ae5-812e-4c73-bdd4-03c643ad8013" />  
+# 📱 Analyse de Sécurité - AndroGoat.apk
+
+## 📊 INFORMATIONS GÉNÉRALES
+
+### ✅ APP SCORES
+- **Security Score:** 48/100 (orange - niveau moyen)
+- **Trackers Detection:** 0/432 (bon !)
+
+### ✅ FILE INFORMATION
+- **File Name:** AndroGoat.apk
+- **Size:** 6.77MB
+- **Package Name:** owasp.sat.agoat
+- **Main Activity:** owasp.sat.agoat.SplashActivity
+- **Min SDK:** 23 | **Target SDK:** 19
+- **Android Version:** 1.0 | **Version Code:** 1
+
+### ✅ COMPOSANTS EXPOSÉS (CRITIQUE !)
+
+| Type | Nombre | Exportés | Statut |
+|------|--------|----------|--------|
+| 🔵 Activities | 30 | 1 | |
+| 🟢 Services | 1 | 1 | |
+| 🟡 Receivers | 2 | 2 | ⚠️ |
+| 🔴 Providers | 2 | 1 | ⚠️ |
+
+---
+
+## 🔐 ANALYSE DES PERMISSIONS
+
+### Permissions DANGEREUSES 🔴
+
+| Permission | Description | Risque |
+|------------|-------------|--------|
+| `android.permission.CAMERA` | Permet de prendre photos et vidéos | Collecte d'images en temps réel |
+| `android.permission.READ_EXTERNAL_STORAGE` | Lecture du stockage externe | Accès aux fichiers personnels |
+| `android.permission.WRITE_EXTERNAL_STORAGE` | Écriture sur stockage externe | Modification/suppression de fichiers |
+
+### Permissions NORMALES 🔵
+- `android.permission.INTERNET` - Accès réseau
+- `android.permission.USE_BIOMETRIC` - Biométrie
+- `android.permission.USE_FINGERPRINT` - Empreinte (déprécié)
+
+### Permission INCONNUE ⚠️
+- `owasp.sat.agoat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`
+
+---
+
+## 🚨 ANALYSE DE SÉCURITÉ COMPLÈTE
+
+### Vulnérabilités Critiques 🔴 HIGH
+
+| # | Problème | Description |
+|---|----------|-------------|
+| 1 | **Vulnerable Android Version** | Target SDK 19 (Android 4.4.4) → Très obsolète ! Multiples vulnérabilités non patchées |
+| 3 | **Debug Enabled** | Mode debug activé |
+
+### Problèmes de Configuration 🟠 WARNING
+
+| # | Problème | Détail |
+|---|----------|--------|
+| 4 | **AllowBackup** | Sauvegarde de données autorisée |
+| 5 | **Activity Exported** | `AccessControlJViewActivity` non protégée |
+| 6 | **Broadcast Receiver Exported** | `ShowDataReceiver` accessible par toutes les apps |
+| 7 | **Service Exported** | `DownloadInvoiceService` accessible par toutes les apps |
+| 8 | **Content Provider Exported** | `ContentProviderActivity` accessible par toutes les apps |
+| 9 | **Broadcast Receiver with Weak Permission** | `ProfileInstallReceiver` protégé par permission DUMP (faible) |
+
+### Informations Complémentaires ℹ️ INFO
+
+| # | Problème | Action |
+|---|----------|--------|
+| 2 | **Network Security Configuration** | Présence d'une configuration réseau personnalisée - À examiner en détail |
+
+---
+
+## 🔑 SECRETS HARDCODÉS
+
+### Fichiers Java Suspects 📁
+<img width="788" height="605" alt="image" src="https://github.com/user-attachments/assets/d70f8643-17ed-44f8-b852-f4978a1815e4" />  
+## ACKPOT ! ENCORE PLUS DE SECRETS CRITIQUES !   
+## 💥 IMPACT CATASTROPHIQUE 🔴
+
+Ces credentials AWS permettent :
+
+| Impact | Description |
+|--------|-------------|
+| ✅ | Accès **TOTAL** aux ressources AWS du compte |
+| ✅ | Création/suppression d'instances EC2 |
+| ✅ | Accès aux buckets S3 (données sensibles) |
+| ✅ | Modification de bases de données RDS |
+| ✅ | Factures AWS potentiellement **ÉNORMES** (cryptomining, etc.) |
+| ✅ | Vol de toutes les données stockées |    
+
+<img width="842" height="734" alt="image" src="https://github.com/user-attachments/assets/4310499d-68ed-4540-8760-22d73563c795" />
+
+
+  # URLs et Endpoints identifiés !
+  <img width="1540" height="446" alt="image" src="https://github.com/user-attachments/assets/454ae0b0-002a-4263-ae2c-00108ab267bc" />  
+  ## 🌐 ANALYSE DES URLs TROUVÉES
+
+🔴 CRITIQUE - URL HTTP (Non sécurisée):
+http://demo.testfire.net
+Problème: Utilise HTTP au lieu de HTTPS !
+- Trafic en clair (non chiffré)
+- Vulnérable aux attaques Man-in-the-Middle
+- Interception possible des données
+
+✅ URLs HTTPS (Sécurisées):
+https://cve.org
+https://owasp.org
+https://github.com/satishpatnayak/androgoat
+https://twitter.com/satish_patnayak
+https://raw.githubusercontent.com/satishpatnayak/mytest/master/androgoatinvoice.txt    
+
+<img width="782" height="1004" alt="image" src="https://github.com/user-attachments/assets/fe5a8351-c294-4e15-b9d8-275f42b16c50" />
+
+## Récapitulons ce qu'on a trouvé:
+
+<img width="1073" height="225" alt="image" src="https://github.com/user-attachments/assets/f49a0742-d1e8-401b-a96e-aa551a0b0755" />    
+
+# TASK 7 - Corrélation OWASP MASVS   
+
+<img width="1782" height="844" alt="image" src="https://github.com/user-attachments/assets/81f0763d-83d4-4f4a-85ba-a83bb86e85d4" />  
+
+  <img width="1920" height="1066" alt="image" src="https://github.com/user-attachments/assets/7b9cb834-f714-4f74-acea-48461e6ded0b" />  
+
+   ##  Déplacer le rapport dans votre dossier de travail  
+   
+  <img width="1357" height="92" alt="image" src="https://github.com/user-attachments/assets/d04f058f-b482-4af7-9a45-cf093d2c330b" />
+
+  ##  Noter l'exportation dans le fichier de traçabilité
+<img width="760" height="512" alt="image" src="https://github.com/user-attachments/assets/28b3d1e2-29a7-44b4-93dc-bbcbd06d5442" />
+
+  ## Créer le fichier de synthèse des vulnérabilités
+<img width="636" height="829" alt="image" src="https://github.com/user-attachments/assets/7a058c02-192f-44c0-ac18-f20c3b3703eb" />
+
+  ## CHECK WORK - TASK 8:
+
+  <img width="796" height="372" alt="image" src="https://github.com/user-attachments/assets/1f53055e-262f-43c3-8be6-35153fda54c3" />
+
+  #  Rédaction du mini-rapport d'audit  
+  
+<img width="1918" height="761" alt="image" src="https://github.com/user-attachments/assets/a87c99cc-62d0-4866-9ff0-8b8906eb9e26" />    
+
+<img width="706" height="586" alt="image" src="https://github.com/user-attachments/assets/f019aa52-bf87-4481-975b-b742f8c8b154" />
+
+  <img width="826" height="453" alt="image" src="https://github.com/user-attachments/assets/abbffddc-adf4-487b-852c-13ea406707aa" />
+
+
 
