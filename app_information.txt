@@ -1,0 +1,21 @@
+=== APP INFORMATION ===
+
+Nom du package: owasp.sat.agoat
+Version de l'application: 1.0
+Code version: 1
+Versions SDK minimale: 23 (Android 6.0)
+Versions SDK cible: 19 (Android 4.4) ⚠️ OBSOLÈTE!
+Taille de l'APK: 6.77 MB
+Main Activity: owasp.sat.agoat.SplashActivity
+
+=== CONFIGURATIONS DE SÉCURITÉ (à vérifier) ===
+Application debuggable: [À VÉRIFIER]
+Autorise les sauvegardes (allowBackup): [À VÉRIFIER]
+usesCleartextTraffic: [À VÉRIFIER]
+
+
+=== CONFIGURATIONS DE SÉCURITÉ DÉTECTÉES ===
+✗ Application debuggable: OUI ⚠️ CRITIQUE
+✗ Autorise les sauvegardes (allowBackup): OUI ⚠️ WARNING
+? usesCleartextTraffic: [À vérifier dans Manifest]
+

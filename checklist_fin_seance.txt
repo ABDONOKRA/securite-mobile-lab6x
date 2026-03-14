@@ -1,0 +1,29 @@
+═══════════════════════════════════════════════════════════════
+CHECKLIST DE FIN DE SÉANCE - LAB 6 SÉCURITÉ MOBILE
+═══════════════════════════════════════════════════════════════
+
+✅ Mini-rapport finalisé et sauvegardé
+   └─ Fichier: rapport_final.md
+
+✅ Rapport MobSF exporté
+   └─ Fichier: MobSF_Report_AndroGoat_YYYYMMDD.pdf
+
+✅ Artefacts organisés
+   └─ Dossier: ~/apk_analysis/YYYY-MM-DD/
+
+✅ Fichiers créés:
+   ├─ analyse_info.txt
+   ├─ app_information.txt
+   ├─ permissions.txt
+   ├─ composants_exportes.txt
+   ├─ vulnerabilites_critiques.txt
+   ├─ config_reseau.txt
+   ├─ vulnerabilites_code.txt
+   ├─ hardcoded_secrets.txt
+   ├─ endpoints.txt
+   ├─ correlation_masvs.txt
+   ├─ top_vulnerabilites.txt
+   └─ rapport_final.md
+
+⏳ VM à arrêter proprement (dernière étape)
+

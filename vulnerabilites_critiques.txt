@@ -1,0 +1,34 @@
+=== VULNÉRABILITÉS CRITIQUES IDENTIFIÉES ===
+
+#1 - DEBUG ENABLED FOR APP [CRITIQUE - HIGH]
+-------------------------------------------
+Configuration: android:debuggable="true"
+Localisation: AndroidManifest.xml
+Impact: 
+- Permet aux attaquants d'attacher un debugger
+- Dumping de la stack trace possible
+- Accès aux classes de débogage
+Référence MASVS: MSTG-RESILIENCE-2
+Recommandation: Désactiver debuggable="false" en production
+
+#2 - APPLICATION DATA CAN BE BACKED UP [WARNING]
+------------------------------------------------
+Configuration: android:allowBackup="true"
+Localisation: AndroidManifest.xml
+Impact:
+- Extraction des données via ADB
+- Vol de données sensibles (tokens, credentials, cache)
+Référence MASVS: MSTG-STORAGE-8
+Recommandation: Définir allowBackup="false" ou implémenter BackupAgent avec encryption
+
+#3 - ACTIVITY EXPORTED WITHOUT PROTECTION [WARNING]
+---------------------------------------------------
+Composant: owasp.sat.agoat.AccessControlJViewActivity
+Configuration: android:exported="true"
+Impact:
+- Accessible par toute application tierce
+- Bypass potentiel de l'authentification
+- Accès non autorisé aux fonctionnalités
+Référence MASVS: MSTG-PLATFORM-1
+Recommandation: Ajouter permission ou exported="false"
+

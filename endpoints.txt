@@ -1,0 +1,61 @@
+=== ENDPOINTS ET URLs IDENTIFIÉS ===
+-------------------
+
+URL HTTP (NON SÉCURISÉE) - CRITIQUE:
+------------------------------------
+http://demo.testfire.net
+└─ Fichier: owasp/sat/agoat/TrafficActivity.java
+└─ Protocole: HTTP (cleartext)
+└─ Impact: Trafic non chiffré, vulnérable MITM
+└─ Référence MASVS: MSTG-NETWORK-1
+└─ Recommandation: Migrer vers HTTPS
+
+URLs HTTPS (SÉCURISÉES):
+------------------------
+1. https://cve.org
+   └─ Fichier: owasp/sat/agoat/TrafficActivity.java
+   └─ Usage: Référence CVE (Common Vulnerabilities)
+
+2. https://owasp.org
+   └─ Fichier: owasp/sat/agoat/TrafficActivity.java
+   └─ Usage: Documentation OWASP
+
+3. https://github.com/satishpatnayak/androgoat
+   └─ Fichier: Android String Resource
+   └─ Usage: Repository GitHub du projet
+
+4. https://twitter.com/satish_patnayak
+   └─ Fichier: Android String Resource
+   └─ Usage: Profil social développeur
+
+5. https://raw.githubusercontent.com/satishpatnayak/mytest/master/androgoatinvoice.txt
+   └─ Fichier: owasp/sat/agoat/DownloadInvoiceService.java
+   └─ Usage: Téléchargement de fichier invoice
+
+ANALYSE DES PROTOCOLES:
+-----------------------
+☑ HTTP (non sécurisé): 1 URL (17%)
+☑ HTTPS (sécurisé): 5 URLs (83%)
+☑ Mixte: OUI ⚠️ (HTTP + HTTPS dans la même app)
+
+RISQUES IDENTIFIÉS:
+-------------------
+1. Trafic mixte HTTP/HTTPS
+   → Risque de downgrade attack
+   → Certificate pinning recommandé
+
+2. URL HTTP hardcodée
+   → Interception du trafic possible
+   → Données sensibles potentiellement exposées
+
+3. Endpoint externe (GitHub raw content)
+   → Dépendance à une ressource externe
+   → Possible manipulation du contenu
+
+RECOMMANDATIONS:
+----------------
+1. Éliminer toute URL HTTP
+2. Implémenter certificate pinning pour endpoints critiques
+3. Utiliser network_security_config pour bloquer cleartext
+4. Valider les certificats SSL/TLS côté client
+

@@ -1,0 +1,20 @@
+=== FICHIERS CRÉÉS POUR LE LAB 6 ===
+Date: Wed 11 Mar 2026 08:18:45 PM EDT
+
+total 7.0M
+-rw-r--r-- 1 mobexler mobexler  806 Mar 11 20:07 analyse_info.txt
+-rw-r--r-- 1 mobexler mobexler 6.8M Mar 11 12:30 AndroGoat.apk
+-rw-r--r-- 1 mobexler mobexler  669 Mar 11 13:53 app_information.txt
+-rw-r--r-- 1 mobexler mobexler 1.1K Mar 11 20:18 checklist_fin_seance.txt
+-rw-r--r-- 1 mobexler mobexler  684 Mar 11 13:54 composants_exportes.txt
+-rw-r--r-- 1 mobexler mobexler  702 Mar 11 14:03 config_reseau.txt
+-rw-r--r-- 1 mobexler mobexler  12K Mar 11 19:56 correlation_masvs.txt
+-rw-r--r-- 1 mobexler mobexler 2.0K Mar 11 19:50 endpoints.txt
+-rw-r--r-- 1 mobexler mobexler 2.7K Mar 11 19:44 hardcoded_secrets.txt
+-rw-r--r-- 1 mobexler mobexler   78 Mar 11 20:18 liste_fichiers.txt
+-rw-r--r-- 1 mobexler mobexler 123K Mar 11 19:59 MobSF_Report_AndroGoat_20260311.pdf
+-rw-r--r-- 1 mobexler mobexler  228 Mar 11 13:45 permissions.txt
+-rw-r--r-- 1 mobexler mobexler  12K Mar 11 20:16 rapport_final.md
+-rw-r--r-- 1 mobexler mobexler 7.2K Mar 11 20:08 top_vulnerabilites.txt
+-rw-r--r-- 1 mobexler mobexler 2.9K Mar 11 19:35 vulnerabilites_code.txt
+-rw-r--r-- 1 mobexler mobexler 1.3K Mar 11 13:55 vulnerabilites_critiques.txt

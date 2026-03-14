@@ -1,0 +1,27 @@
+=== ANALYSE APK - Lab 6 ===
+Date: Wed 11 Mar 2026 01:15:05 PM EDT
+Analyste: [VOTRE NOM]
+
+3e6f6b538b82874dd94c0d8cdadd69ba54d49b59d2c7eb055073892e8a4fc0e0  AndroGoat.apk
+=== OUTILS UTILISÉS ===
+MobSF version: [NOTEZ LA VERSION ICI]
+URL: http://127.0.0.1:8000
+
+=== ANALYSE ===
+Début d'analyse: Wed 11 Mar 2026 01:26:09 PM EDT
+Fin d'analyse: Wed 11 Mar 2026 01:30:58 PM EDT
+Score de sécurité: 48/100
+APK analysé: AndroGoat.apk (6.77MB)
+Package: owasp.sat.agoat
+Trackers: 0/432
+
+
+=== RAPPORT EXPORTÉ ===
+Date export: Wed 11 Mar 2026 08:06:48 PM EDT
+Rapport MobSF: MobSF_Report_AndroGoat_20260311.pdf
+Localisation: ~/apk_analysis/2026-03-11/
+
+=== RAPPORT EXPORTÉ ===
+Date export: Wed 11 Mar 2026 08:07:43 PM EDT
+Rapport MobSF: MobSF_Report_AndroGoat_20260311.pdf
+Localisation: ~/apk_analysis/2026-03-11/

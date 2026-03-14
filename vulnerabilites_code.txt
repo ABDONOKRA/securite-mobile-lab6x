@@ -1,0 +1,77 @@
+=== VULNÉRABILITÉS DE CODE IDENTIFIÉES ===
+
+#1 - TEMP FILE CREATION [WARNING]
+---------------------------------
+Issue: App creates temp file. Sensitive information should never be written into a temp file
+Severity: WARNING
+Standard: CWE-276 (Incorrect Default Permissions)
+OWASP MASVS: MSTG-STORAGE-2
+Files concernés:
+- owasp/sat/agoat/InsecureStorageSDCardActivity.java
+- owasp/sat/agoat/InsecureStorageTempActivity.java
+
+#2 - HARDCODED SECRETS [WARNING - CRITIQUE!]
+--------------------------------------------
+Issue: Files may contain hardcoded sensitive information like usernames, passwords, keys etc.
+Severity: WARNING
+Standard: CWE-312 (Cleartext Storage of Sensitive Information)
+OWASP MASVS: MSTG-STORAGE-14
+Files concernés: [EN ATTENTE - cliquer sur Show Files]
+
+#3 - INSECURE LOGGING [INFO]
+----------------------------
+Issue: The App logs information. Sensitive information should never be logged.
+Severity: INFO
+Standard: CWE-532 (Insertion of Sensitive Information into Log File)
+OWASP MASVS: MSTG-STORAGE-3
+Files concernés: [Visible sur demande]
+
+#4 - SQL INJECTION [WARNING - CRITIQUE!]
+----------------------------------------
+Issue: App uses SQLite Database and execute raw SQL query. 
+       Untrusted user input in raw SQL queries can cause SQL Injection.
+       Sensitive information should be encrypted and written to database.
+Severity: WARNING
+Standard: CWE-89 (SQL Injection)
+OWASP Top 10: M7 (Client Code Quality)
+Files concernés:
+- owasp/sat/agoat/ContentProviderActivity.java
+- owasp/sat/agoat/InsecureStorageSQLiteActivity.java
+- owasp/sat/agoat/SQLinjectionActivity.java
+
+#5 - EXTERNAL STORAGE READ/WRITE [WARNING]
+------------------------------------------
+Issue: App can read/write to External Storage. Any App can read data written to External Storage.
+Severity: WARNING
+Standard: CWE-276 (Incorrect Default Permissions)
+OWASP MASVS: MSTG-STORAGE-2
+Files concernés:
+- owasp/sat/agoat/InsecureStorageSDCardActivity.java
+
+#6 - WEAK CRYPTOGRAPHY (MD5) [WARNING]
+--------------------------------------
+Issue: MD5 is a weak hash known to have hash collisions
+Severity: WARNING
+Standard: CWE-327 (Use of Broken or Risky Cryptographic Algorithm)
+OWASP Top 10: M5 (Insufficient Cryptography)
+OWASP MASVS: MSTG-CRYPTO-4
+Files concernés:
+- owasp/sat/agoat/AccessControlIssue1Activity.java
+
+#7 - CLIPBOARD LEAKAGE [INFO]
+-----------------------------
+Issue: This App copies data to clipboard. Sensitive data should not be copied 
+       to clipboard as other applications can access it.
+Severity: INFO
+OWASP MASVS: MSTG-STORAGE-10
+Files concernés:
+- owasp/sat/agoat/ClipboardActivity.java
+
+#8 - ROOT DETECTION REQUEST [WARNING]
+-------------------------------------
+Issue: This App may request root (Super User) privileges
+Severity: WARNING
+Standard: CWE-250 (Execution with Unnecessary Privileges)
+Files concernés:
+- owasp/sat/agoat/RootDetectionActivity.java
+

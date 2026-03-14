@@ -1,0 +1,20 @@
+=== CONFIGURATION RÉSEAU ===
+-------------------
+
+CONFIGURATION MANIFESTE:
+✗ usesCleartextTraffic: NON SPÉCIFIÉ (comportement par défaut)
+  → Avec targetSdk 33, cleartext autorisé sauf restriction explicite
+✓ networkSecurityConfig: PRÉSENT (@xml/network_security_config)
+  → Configuration personnalisée à analyser
+
+FICHIER DE CONFIGURATION:
+- Emplacement: res/xml/network_security_config.xml
+- Status: PRÉSENT (alerte #2 confirmée)
+- Contenu: [À RÉCUPÉRER depuis MobSF]
+
+ANALYSE REQUISE:
+- Vérifier si HTTP (cleartext) est autorisé ou bloqué
+- Identifier les domaines de confiance configurés
+- Vérifier les certificats personnalisés
+- Chercher des debug-overrides dangereux
+

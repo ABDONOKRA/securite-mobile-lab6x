@@ -1,0 +1,28 @@
+Composants exportés :
+-------------------
+
+=== ACTIVITIES EXPORTÉES ===
+[À COMPLÉTER après consultation de la section Components]
+
+=== SERVICES EXPORTÉS ===
+[À COMPLÉTER]
+
+=== RECEIVERS EXPORTÉS ===
+[À COMPLÉTER]
+
+=== PROVIDERS EXPORTÉS ===
+[À COMPLÉTER]
+
+=== RISQUES IDENTIFIÉS ===
+- Service 100% exporté → Accessible par toute application
+- Receivers 100% exportés → Surface d'attaque importante
+- Provider exporté → Risque de fuite de données
+
+
+=== DÉTAILS DES COMPOSANTS EXPORTÉS ===
+
+ACTIVITIES EXPORTÉES:
+- owasp.sat.agoat.AccessControlJViewActivity
+  Risque: Accessible par toute application tierce
+  Impact: Bypass potentiel de contrôle d'accès
+
